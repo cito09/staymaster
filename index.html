@@ -1,11 +1,207 @@
-
-<!DOCTYPE html>
-<!DOCTYPE html>
-<!-- contenuto del sito (già mostrato sopra) -->
-
 <!DOCTYPE html>
 <html lang="it">
-<!-- tutto il codice già creato sopra incluso qui -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StayMaster | Gestione Affitti Brevi Professionale</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: url('https://source.unsplash.com/1600x900/?apartment,modern') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 6rem 2rem;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+    header > * {
+      position: relative;
+      z-index: 2;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+    .cta-button {
+      background: #00A8E8;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section-title {
+      color: #00A8E8;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .section-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .section-content img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .section-text {
+      flex: 1;
+      min-width: 280px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: "\f058";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      color: #00A8E8;
+      margin-right: 0.5rem;
+    }
+    .testimonial {
+      background: #f1f1f1;
+      padding: 1.5rem;
+      border-radius: 8px;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background: #00A8E8;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+    .logo {
+      font-weight: 800;
+      font-size: 1.2rem;
+      position: absolute;
+      top: 1rem;
+      left: 2rem;
+      z-index: 3;
+    }
+    .logo img {
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="https://i.imgur.com/1XntzGq.png" alt="StayMaster Logo"></div>
+    <h1>Gestione Affitti Brevi Chiavi in Mano</h1>
+    <p>Più guadagni, meno pensieri. Dalla pubblicazione alla pulizia, pensiamo a tutto noi.</p>
+    <a href="#contatti" class="cta-button">Richiedi una consulenza gratuita</a>
+  </header>
 
-</html>
+  <section>
+    <h2 class="section-title">I nostri servizi</h2>
+    <div class="section-content">
+      <div class="section-text">
+        <p>StayMaster si occupa di ogni dettaglio della gestione della tua proprietà: dalla pubblicazione degli annunci, alla comunicazione con gli ospiti, fino alla pulizia professionale dopo ogni soggiorno. Ci assicuriamo che la tua casa sia sempre pronta ad accogliere al meglio.</p>
+        <ul>
+          <li>Gestione professionale degli annunci</li>
+          <li>Check-in/check-out e comunicazioni ospiti</li>
+          <li>Pulizie, lavanderia e manutenzione</li>
+          <li>Supporto 24/7 durante il soggiorno</li>
+          <li>Recensioni e reputazione online</li>
+          <li>Ottimizzazione prezzi con algoritmi dinamici</li>
+        </ul>
+      </div>
+      <img src="https://source.unsplash.com/600x400/?hotel,room" alt="Servizi StayMaster">
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Perché affidarti a StayMaster</h2>
+    <div class="section-content">
+      <img src="https://source.unsplash.com/600x400/?property,value" alt="Vantaggi per i proprietari">
+      <div class="section-text">
+        <p>Con StayMaster aumenti la redditività del tuo immobile e riduci al minimo le tue preoccupazioni. Analizziamo il mercato, curiamo la presentazione della tua casa e manteniamo un rapporto di totale trasparenza con aggiornamenti regolari.</p>
+        <ul>
+          <li>Aumento della redditività degli immobili</li>
+          <li>Zero preoccupazioni per i proprietari</li>
+          <li>Trasparenza con report mensili dettagliati</li>
+          <li>Esperienza, affidabilità e assistenza continua</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Testimonianze</h2>
+    <div class="testimonial">
+      “Grazie a StayMaster ho finalmente trasformato il mio appartamento in una rendita mensile senza stress.”<br>
+      <strong>– Luca, proprietario a Bologna</strong>
+    </div>
+    <div class="testimonial">
+      “Servizio impeccabile e comunicazione costante. Consigliato!”<br>
+      <strong>– Martina, proprietaria a Modena</strong>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Chi siamo</h2>
+    <div class="section-content">
+      <div class="section-text">
+        <p>StayMaster nasce dall'esperienza di <strong>Daniel Sitta</strong>, professionista con oltre 10 anni nel settore tecnico e immobiliare. Il nostro approccio è personale: trattiamo ogni proprietà come se fosse la nostra, con attenzione, cura e un tocco umano. La nostra rete di professionisti e il supporto tecnologico ci permettono di offrire un servizio di qualità superiore.</p>
+      </div>
+      <img src="https://source.unsplash.com/600x400/?team,work" alt="Team StayMaster">
+    </div>
+  </section>
+
+  <section id="contatti">
+    <h2 class="section-title">Contattaci</h2>
+    <form>
+      <input type="text" name="nome" placeholder="Il tuo nome" required>
+      <input type="email" name="email" placeholder="La tua email" required>
+      <textarea name="messaggio" rows="5" placeholder="Il tuo messaggio" required></textarea>
+      <button type="submit">Invia richiesta</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 StayMaster | Gestione Affitti Brevi - Tutti i diritti riservati</p>
+    <p>Contatto: info@staymaster.it | Tel: +39 333 123 4567</p>
+  </footer>
+</body>
 </html>
